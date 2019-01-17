@@ -3,7 +3,11 @@ function helpCommand(arguments, recievedMessage){
     if (arguments.length == 1) {
         recievedMessage.channel.send("Greshka probvai !")
     } else {
-        recievedMessage.channel.send("BOTA NE E 112")
+let mms = `diff\n
+-BOTA NE E 112\n
+`;
+
+        recievedMessage.channel.send("```" + mms + "```")
     }
 }
 function name(arguments, recievedMessage, client){

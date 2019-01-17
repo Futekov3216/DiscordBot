@@ -11,7 +11,7 @@ client.on('ready', async () => {
     console.log(`Connected as ${client.user.tag}`)
 
     // console.log(client)
-    client.user.setActivity('PRILOJENIE ZA +18', {type: "Creating"})
+    client.user.setActivity("+18", {type: "Watching"})
 
     client.guilds.forEach((guild) => {
         guild.channels.forEach((channel) => {
