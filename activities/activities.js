@@ -10,13 +10,15 @@ module.exports = {
                         if (primaryCommand == "pomosht") {
                             Controllers.helpCommand(arguments, recievedMessage, client)
                         } else if (primaryCommand == "ПОКАЖИ" || primaryCommand == "Tinder") {
-                            // console.log(primaryCommand)
                             Controllers.name(arguments, recievedMessage, client)
-                            // console.log("args", recievedMessage)
                         } else if (primaryCommand == "ДАЙ"){
                             Controllers.Dai(arguments, recievedMessage, client)
                         }else if (primaryCommand == "quot"){
                             Controllers.fraza(arguments, recievedMessage, client)
+                        } else if (primaryCommand == 'proverka'){
+                            Controllers.proverka(arguments, recievedMessage, client)
+                        } else if (primaryCommand == 'dobavi'){
+                            Controllers.dobavi(arguments, recievedMessage, client)
                         }
                     }
 
